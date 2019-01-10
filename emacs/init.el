@@ -39,6 +39,9 @@
 (menu-bar-mode -1)
 (tool-bar-mode 0)
 
+;; Font
+(set-frame-font "Tamsyn 14" nil t)
+
 ;; Store all backup and autosaves in tmp dir
 (setq backup-directory-alist
       `((".*" . ,temporary-file-directory)))

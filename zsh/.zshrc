@@ -3,7 +3,7 @@ zstyle ':completion:*' matcher-list 'm:{[:lower:]}={[:upper:]}' 'r:|[._-]=* r:|=
 zstyle ':completion:*' max-errors 1
 zstyle ':completion:*' menu select
 zstyle ':completion:*' rehash true
-zstyle :compinstall filename '/home/fidde/.zshrc'
+zstyle :compinstall filename '$HOME/.zshrc'
 
 autoload -Uz compinit
 autoload -U edit-command-line
@@ -13,7 +13,7 @@ zle -N edit-command-line
 bindkey '^xe' edit-command-line
 bindkey '^x^e' edit-command-line
 
-ZSH_CONFIG_DIR="/home/fidde/.config/zsh"
+ZSH_CONFIG_DIR="$HOME/.config/zsh"
 source "$ZSH_CONFIG_DIR/zplug.zsh"
 source "$ZSH_CONFIG_DIR/aliases.zsh"
 
