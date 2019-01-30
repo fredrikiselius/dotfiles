@@ -1,0 +1,26 @@
+urxvt.termName: rxvt-256color
+urxvt.reverseVideo: false
+
+! Font
+
+! Tamsyn font settings
+urxvt.font: xft:Misc\ Tamsyn:size=14, \
+	    xft:FontAwesome:size=14
+
+	    
+!urxvt.boldFont: -misc-tamsyn-bold-r-normal--14-101-100-100-c-70-iso8859-1
+
+! Inconsolata font settings
+!urxvt.font: xft:Meslo:size=11:antialias=true:hinting=true
+
+!urxvt.letterSpace: -4
+urxvt.scrollBar: false
+!urxvt.scrollstyle: plain
+!urxvt.scrollBar_right: true
+
+urxvt.urgentOnBell: true
+
+urxvt*transparent: true
+urxvt*shading: 10
+
+urxvt*imLocale: en_US.UTF-8

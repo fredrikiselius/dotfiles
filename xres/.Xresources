@@ -1,0 +1,11 @@
+#if __has_include(".colors.Xresources")
+#include ".colors.Xresources"
+#endif
+
+#include ".xres/.urxvt"
+#include ".xres/.rofi"
+
+#define bg #1d1f21
+
+
+
