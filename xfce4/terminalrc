@@ -32,5 +32,5 @@ MiscNewTabAdjacent=FALSE
 ColorForeground=#c5c8c6
 ColorBackground=#1d1f21
 ColorCursor=#c5c8c6
-ColorPalette=#282a2e;#373b41;#a54242;#cc6666;#8c9440;#b5bd68;#ff6138;#ff884d;#5f819d;#81a2be;#85678f;#b294bb;#00a388;#50b392;#707880;#c5c8c6
+ColorPalette=rgb(40,42,46);rgb(165,66,66);rgb(140,148,64);rgb(255,97,56);rgb(95,129,157);rgb(133,103,143);rgb(0,163,136);rgb(112,120,128);rgb(55,59,65);rgb(204,102,102);rgb(181,189,104);rgb(255,136,77);rgb(129,162,190);rgb(178,148,187);rgb(80,179,146);rgb(197,200,198)
 
