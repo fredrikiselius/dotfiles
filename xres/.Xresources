@@ -2,8 +2,8 @@
 #include ".colors.Xresources"
 #endif
 
-#include ".xres/.urxvt"
-#include ".xres/.rofi"
+#include ".config/xres/.urxvt"
+#include ".config/xres/.rofi"
 
 #define bg #1d1f21
 

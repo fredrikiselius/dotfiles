@@ -1,9 +1,11 @@
 #!/bin/bash
 
 
+XRES_CONF_PATH="$HOME/.config/xres"
 ZSH_CONF_PATH="$HOME/.config/zsh"
 EMACS_CONF_PATH="$HOME/.emacs.d"
 DIR=$(cd `dirname $0` && pwd)
+
 ######################################## Functions
 symbolic_if_possible()
 {
@@ -41,6 +43,30 @@ for zf in $ZSH_FILES
 do
     symbolic_if_possible $DIR/zsh/$zf $ZSH_CONF_PATH/$zf
 done
+printf "Done\n\n"
+
+######################################## xres
+printf "Installing xres files..\n"
+symbolic_if_possible $DIR/xres/.Xresources $HOME/.Xresources
+symbolic_if_possible $DIR/xres/.colors.Xresources $HOME/.colors.Xresources
+
+if [ ! -d $XRES_CONF_PATH ]
+then
+    printf "Creating folder $XRES_CONF_PATH\n"
+    mkdir -p $XRES_CONF_PATH
+fi
+
+XRES_FILES=".urxvt
+.rofi"
+
+for xf in $XRES_FILES
+do
+    symbolic_if_possible $DIR/xres/$xf $XRES_CONF_PATH/$xf
+done
+printf "Done\n\n"
+
+######################################## xres
+printf "Installing xfce files..\n"
+symbolic_if_possible $DIR/xfce4/terminalrc $HOME/.config/xfce4/terminal/terminalrc
+
 printf "Done\n"
-
-
