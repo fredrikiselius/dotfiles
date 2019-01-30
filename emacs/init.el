@@ -23,6 +23,7 @@
     doom-themes
     neotree
     atom-one-dark-theme
+    org-bullets
     py-autopep8))
 
 (mapc #'(lambda (package)
@@ -84,12 +85,22 @@
 (add-hook 'LaTeX-mode-hook 'flyspell-mode)
 (add-hook 'LaTeX-mode-hook 'flyspell-buffer)
 
+;; Org-mode
+(add-hook 'org-mode-hook (lambda () (org-bullets-mode 1)))
+;;(setq org-format-latex-options (plist-put org-format-latex-options :scale 1.5))
+(global-set-key "\C-ca" 'org-agenda)
+(global-set-key "\C-c[" 'org-agenda-file-to-front)
+(global-set-key "\C-c]" 'org-remove-file)
+
+(global-set-key "\C-c." 'org-time-stamp)
+
 ;; init.el ends here
 (custom-set-variables
  ;; custom-set-variables was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
+ '(org-agenda-files (quote ("~/2.org")))
  '(package-selected-packages (quote (matlab-mode material-theme better-defaults))))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
